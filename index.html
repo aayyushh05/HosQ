@@ -3,141 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HealthTrack - Hospital Management System</title>
+    <title>Hospital Management System</title>
     <style>
-        /* General Reset */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f4f4;
         }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8;
-        }
-
         header {
             background-color: #4CAF50;
-            padding: 20px;
-            text-align: center;
             color: white;
+            padding: 10px 0;
+            text-align: center;
         }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
         nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border: 2px solid #4CAF50;
-            border-radius: 5px;
-            transition: all 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        section.hero {
-            height: 400px;
-            background-image: url('hospital.jpg');
-            background-size: cover;
-            background-position: center;
             display: flex;
             justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        section.hero h2 {
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        section.features {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px;
-        }
-
-        .feature-box {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 30%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .feature-box img {
-            width: 100px;
-            margin-bottom: 15px;
-        }
-
-        footer {
             background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
         }
-
-        footer p {
-            margin-bottom: 10px;
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .feature {
+            background-color: white;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature h2 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>HealthTrack</h1>
-        <p>Your Trusted Hospital Management Solution</p>
-    </header>
 
-    <nav>
-        <a href="#features">Features</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header>
+    <h1>Hospital Management System</h1>
+</header>
 
-    <section class="hero">
-        <h2>Efficiently Manage Your Hospital's OPD, Beds, and Inventory</h2>
-    </section>
+<nav>
+    <a href="#opd">OPD Management</a>
+    <a href="#bed">Bed Availability</a>
+    <a href="#admission">Patient Admission</a>
+    <a href="#inventory">Inventory Management</a>
+</nav>
 
-    <section class="features" id="features">
-        <div class="feature-box">
-            <img src="bed-icon.png" alt="Bed Availability">
-            <h3>Bed Availability</h3>
-            <p>Track available beds in real-time and manage patient admissions efficiently.</p>
-        </div>
-        <div class="feature-box">
-            <img src="medicine-icon.png" alt="Inventory Management">
-            <h3>Inventory Management</h3>
-            <p>Monitor medicines and consumables with our streamlined inventory system.</p>
-        </div>
-        <div class="feature-box">
-            <img src="opd-icon.png" alt="OPD Management">
-            <h3>OPD Queue System</h3>
-            <p>Manage queues in OPD to minimize patient wait times and enhance service quality.</p>
-        </div>
-    </section>
+<div class="container">
+    <div id="opd" class="feature">
+        <h2>OPD Management</h2>
+        <p>Manage outpatient services, including patient registration, appointment scheduling, and real-time queue monitoring.</p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 HealthTrack - All Rights Reserved</p>
-        <p>Contact Us: info@healthtrack.com</p>
-    </footer>
+    <div id="bed" class="feature">
+        <h2>Bed Availability</h2>
+        <p>Track and manage the availability of hospital beds across different wards and departments in real-time.</p>
+    </div>
+
+    <div id="admission" class="feature">
+        <h2>Patient Admission</h2>
+        <p>Handle the admission process efficiently, from initial patient intake to assignment of beds and rooms.</p>
+    </div>
+
+    <div id="inventory" class="feature">
+        <h2>Inventory Management</h2>
+        <p>Oversee the management of medical supplies and medicines, ensuring stock levels are maintained and orders are processed smoothly.</p>
+    </div>
+</div>
+
 </body>
 </html>
+
